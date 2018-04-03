@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 //Testa se o Switch de notificação está marcado e informa se deve ser verdadeiro
                 if (swNotificacao.isChecked()) {
                     gravar.putBoolean("notificacao", true);
+                }else
+                {
+                    gravar.putBoolean("notificacao", false);
                 }
 
                 //Testa se o RadioButton masculino está marcado e informa se deve ser verdadeiro
