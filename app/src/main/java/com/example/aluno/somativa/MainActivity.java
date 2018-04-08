@@ -64,11 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 //Testa se o RadioButton masculino está marcado e informa se deve ser verdadeiro
                 if (masculino.isChecked()) {
                     gravar.putBoolean("masculino", true);
+                }else
+                {
+                    gravar.putBoolean("masculino", false);
                 }
 
                 //Testa se o RadioButton feminino está marcado e informa se deve ser verdadeiro
                 if (feminino.isChecked()) {
                     gravar.putBoolean("feminino", true);
+                }else
+                {
+                    gravar.putBoolean("feminino", false);
                 }
 
                 //Try catch para informar caso ocorra erro
